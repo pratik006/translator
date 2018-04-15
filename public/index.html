@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Speech to text converter in JS</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" />
+		<style type="text/css">
+			body{
+				font-family: verdana;
+			}
+			#result{
+				height: 200px;
+				border: 1px solid #ccc;
+				padding: 10px;
+				box-shadow: 0 0 10px 0 #bbb;
+				margin-bottom: 30px;
+				font-size: 14px;
+				line-height: 25px;
+			}
+			/* button{
+				font-size: 20px;
+				position: absolute;
+				top: 240px;
+				left: 50%;
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h4 align="center">Speech to text converter in JS</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div id="result" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+			</div>				
+			<div class="row">
+				<!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+
+				</div> -->
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<div class="form-group">
+							<label for="inputLang">Select Speech language:</label>
+							<select class="form-control" id="inputLang">
+								<option value="en-Us">English</option>
+								<option value="bn-IN" selected>Bengali</option>
+								<option value="te-IN">Telugu</option>
+								<option value="kn-IN">Kannada</option>
+							</select>
+						</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<button onclick="startConverting();"><i class="fa fa-microphone"></i></button>
+					</div>
+			</div>
+			<div class="row">
+					<div id="output" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+			</div>
+			<div class="row">
+					<div id="google_translate_element" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						</div>
+			</div>
+		</div>		
+		
+	</body>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>
